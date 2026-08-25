@@ -1,9 +1,3 @@
-variable "rgs" {}
-variable "vnets" {}
-variable "subnets" {}
-variable "publicip" {}
-variable "vms" {}
-variable "ai_services" {}
 
 
 module "resource_group" {
@@ -37,4 +31,4 @@ module "ai_services" {
   source      = "../../modules/ai-services"
   ai_services = var.ai_services
 }
-
+
